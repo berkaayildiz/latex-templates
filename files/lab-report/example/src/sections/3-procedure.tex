@@ -1,0 +1,10 @@
+\section{Procedure}
+
+1 - We will start by creating a truth table for each display segment, with a focus on the common cathode configuration. It's important to understand that the common cathode and common anode truth table setups differ significantly.
+
+In common cathode displays, we use a "HIGH" signal to light up a specific segment, whereas common anode displays operate in the opposite way, as we discussed earlier. This contrast means that the truth tables for common cathode and common anode setups will have complementary patterns.\footnote{Answer to "If you used a common anode instead of common cathode, would there be any change in truth table, and if so, how?"}
+Furthermore, as we are only dealing with numerical digits (0-9),  any additional logical combinations beyond this range will not be taken into account and will be classified as "don't cares" (X) in the truth table. This designation implies that for these specific inputs, the LED output is undefined and the led behavior may appear random, which is not intentional.\footnote{Answer to "What happens if you apply inputs for which you used don’t cares?"}
+
+2 - For each output (a-g), we will simplify the function using a Karnaugh Map to obtain a minimized Boolean function in sum-of-products form.
+
+3 - Lastly we will implement a circuit diagram for the 7448 BCD-to-7 segment display decoder for common cathode displays from scratch.\cite{labmanual}
