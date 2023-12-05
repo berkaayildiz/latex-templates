@@ -1,0 +1,62 @@
+% --- Packages --- %
+
+\usepackage[
+a4paper,
+margin=3.5cm,
+top=2.5cm,
+bottom=2.5cm,
+footnotesep=1.25cm,
+footskip=1cm
+]{geometry}
+% Sets page dimensions and margins
+
+\linespread{1.25}
+% Adjust the line spacing to 1.25 times the font size:
+
+\usepackage{XCharter}
+\usepackage[xcharter]{newtxmath}
+% Set the main text font to XCharter, a readable and classic typeface.
+
+\usepackage{amsmath}
+% Enhances typesetting mathematical formulas.
+
+\usepackage{parskip}
+% Adds spaces between paragraphs, disables the indentation of the first line
+
+\usepackage{subfiles} 
+% Allows dividing the document into subfiles
+
+\usepackage{graphicx}
+% Enables the inclusion of images in your document.
+
+\usepackage[
+sorting=none,
+backend=biber,
+url=true,
+]{biblatex}
+\addbibresource{references.bib}
+% Manages bibliography and citation.
+
+% --- Redefinition of the commands --- %
+
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+    \vspace*{3.25cm} % Adjust the space before the title
+    \centering
+    {\LARGE\@title\par}
+    \vspace{1cm} % Adjust the space between title and author
+    {\large\@author\par}
+    \vspace{0.3cm} % Adjust the space between author and date
+    {\large\@date\par}
+    \vspace{3.75cm} % Adjust the space after the date
+  \end{center}
+}
+\makeatother
+% Redefinition of the \maketitle command
+
+
+% --- Extra packages for this report --- %
+
+\usepackage{karnaugh-map}
+% Creates Karnaugh Maps with ease.
